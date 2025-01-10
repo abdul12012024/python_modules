@@ -1,4 +1,5 @@
 from doctor import Doctor
+from patient import Patient
 
 # Create 5 doctors
 doctor1 = Doctor("Alice Johnson", "Cardiology")
@@ -24,3 +25,9 @@ patient7 = Patient("Daniel Gray", 35, "Back Pain")
 patient8 = Patient("Sophia Blue", 20, "Allergy")
 patient9 = Patient("Chris Yellow", 55, "Cholesterol")
 patient10 = Patient("Mia Purple", 28, "Flu")
+
+patients = [patient1, patient2, patient3, patient4, patient5]
+
+# Display information about each doctor
+for patient in patients:
+    print(f"Patient {patient.name} is {patient.age } years old and has {patient.ailment}.")  # Changed here

@@ -1,8 +1,8 @@
 class Patient:
-    def __init__(self, name, age, bed_number):
+    def __init__(self, name, age, ailment):
         self.name = name
         self.age = age
-        self.bed_number = bed_number
+        self.ailment = ailment
 
     def describe(self):
-        print(f"Patient Name: {self.name}, Age: {self.age}, bed_number: {self.bed_number}")
+        print(f"Patient Name: {self.name}, Age: {self.age}, ailment: {self.ailment}")
